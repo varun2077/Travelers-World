@@ -1,0 +1,211 @@
+/*
+bg - 2C3333 #7F95D1
+secentery bg - 2E4F4F #FF82A9
+text - CBE4DE #FFC0BE
+importend text - 0E8388 
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+body{
+    background: linear-gradient(140deg, rgb(68, 0, 255), rgb(255, 0, 212));
+    height: 100%;
+    width: 100%;
+}
+
+.nevbar{
+    color: #CBE4DE;
+    background-color: rgb(29, 29, 95);
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    padding: 35px o;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: sticky;
+    top: 0px;
+}
+.nevbar ul{
+    position: fixed;
+    right: 100px;
+}
+.nevbar ul li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.nevbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+}
+
+.nevbar .logo h1{
+    border:2px solid rgb(223, 60, 196);
+    border-radius: 45px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 5px 5px rgb(223, 60, 196);
+}
+
+.nevbar ul li a:hover{ 
+    color: white;
+    border-radius: 45px;
+    background-color: #00A0FF;
+}
+
+.nevbar button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 45px;
+    color: white;
+    background-color: rgb(255, 0, 191);
+    border: none;
+    border: 2px solid #CBE4DE;
+    transition: 0.5s;
+}
+.nevbar button:hover{
+    box-shadow: 0px 0px 5px 5px rgb(250, 5, 197);
+}
+
+.content{
+    padding: 0 0 10px 50px;
+    width: 700px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 180px 0;
+    color: white;
+}
+.content h3{
+    text-align: center;
+    margin: 5px 0;
+}
+.content h1{
+    text-align: center;
+    font-size: 4.5rem;
+    color: #00A0FF;
+    margin: 10px 0;
+    letter-spacing: 20px;
+}
+.content p{
+    text-align: center;
+    font-size: 1rem;
+}
+.content h4{
+    text-align: center;
+    color: #00A0FF;
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.login div{
+    height: 400px;
+    width: 600px;
+    background-color: #2E4F4F;
+    color: #CBE4DE;
+}
+.form_box{
+    background-color: white;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    color: white;
+    top: 150px;
+    right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: 2px solid  rgb(250, 5, 197);
+    box-shadow: 0px 0px 15px 15px white;
+}
+
+form h3{
+    color: #00A0FF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3rem;
+}
+.inputbox input{
+    margin: 10px 0;
+    height: 50px;
+    width: 100%;
+    color: black;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 1.2rem;
+}
+.inputbox input:focus,
+.inputbox input:valid{
+    border-bottom: 2px solid #00A0FF;
+}
+.inputbox label{
+    position: absolute;
+    left: 80px;
+    bottom: none;
+    margin-top: 35px;
+    color: black;
+    opacity: .5;
+    pointer-events: none;
+    transform: translateY(-50%);
+
+}
+.inputbox input:focus ~ label,
+.inputbox input:active ~ label,
+.inputbox input:valid ~ label{
+    top: 95px;
+    color: #0E8388;
+}
+.inputbox input:focus ~ #pass,
+.inputbox input:active ~ #pass,
+.inputbox input:valid ~ #pass{
+    top: 165px;
+    color: #0E8388;
+}
+
+.register, .remember{
+    text-align: center;
+    color: black;
+}
+.remember{
+    margin: 10px 0;
+}
+.remember a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.remember a:hover{
+    font-size: 1.2rem;
+    color: #00A0FF;
+}
+.btn button{
+    color: white;
+    background-color: #00A0FF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    margin: 20px auto;
+}
+.btn button:hover{
+    border: 2px solid #CBE4DE;
+    box-shadow: 0px 0px 5px 5px #026aa7;
+}
+.register a{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+.register a:hover{
+    font-size: 1.2rem;
+    color: #00A0FF;
+}

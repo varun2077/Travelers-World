@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+body{
+    background: #bac2c6;
+}
+
+.nevbar{
+    color: #CBE4DE;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    display: flex;
+    padding: 35px o;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 5px 0;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+}
+.nevbar ul li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.nevbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.nevbar .logo h1{
+    border:2px solid rgb(223, 60, 196);
+    border-radius: 45px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 5px 5px rgb(223, 60, 196);
+}
+
+.nevbar ul li a:hover{ 
+    color: rgb(223, 60, 196);
+    border-radius: 45px;
+    background-color: white;
+}
+
+.nevbar button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 45px;
+    color: white;
+    background-color: rgb(255, 0, 191);
+    border: none;
+    border: 2px solid #CBE4DE;
+    transition: 0.5s;
+}
+.nevbar button:hover{
+    box-shadow: 0px 0px 5px 5px rgb(250, 5, 197);
+}
+/*-------------------------------Footer-------------------------*/
+footer{
+    position: relative;
+    display: inline-block;
+    bottom: 0px;
+    background-color: rgb(61, 61, 61);
+    height: 300px;
+    width: 100%;
+    color: #CBE4DE;
+    
+}
+.company{
+    position: absolute;
+    left: opx;
+    top: 0px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+.service{
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+.usefulllinks{
+    position: absolute;
+    top: 0;
+    left: 710px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+.contact{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+.company p{
+    text-align: center;
+}
+.company h3, .service h3, .usefulllinks h3, .contact h3{
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    width: 135px;
+    position: relative;
+    left: 80px;
+    border-bottom: 2px solid rgb(223, 60, 196);
+  
+}
+.company ul, .service ul, .usefulllinks ul, .contact ul{
+    list-style-type: none;
+}
+.company ul li, .service ul li, .usefulllinks ul li, .contact ul li{
+    padding: 8px 0;
+}
+.company ul li a, .service ul li a, .usefulllinks ul li a, .contact ul li a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}
+.company ul li a:hover,
+.service ul li a:hover,
+.usefulllinks ul li a:hover,
+.contact ul li a:hover{
+    font-size: 1.2rem;
+    color: rgb(223, 60, 196);
+}
+/*-------------------------------menu-------------------------*/
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.contend{
+    margin: 10px;
+    width: 400px;
+    height: 420px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    transform: .2s ease-in-out;
+}
+.contend img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+.details h4{
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+.details p{
+    text-align: center;
+}
+.details button{
+    color: white;
+    background-color: rgb(255, 0, 191);
+    border: 2px solid white;
+    position: absolute;
+    left: 135px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+.details button:hover{
+    box-shadow: 0 0 15px 5px rgb(167, 1, 125);
+}

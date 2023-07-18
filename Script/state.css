@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #bac2c6;
+    box-sizing: border-box;
+}
+/*-----------------------------------------------nevbar------------------------------------------------------------------*/
+.nevbar {
+    color: #CBE4DE;
+    background-color: rgb(61, 61, 61);
+    width: 100%;
+    display: flex;
+    padding: 35px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 5px 0;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+}
+
+.nevbar ul li {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.nevbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+}
+
+.nevbar .logo h1 {
+    border: 2px solid rgb(223, 60, 196);
+    border-radius: 45px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 5px 5px rgb(223, 60, 196);
+}
+
+.nevbar ul li a:hover {
+    color: rgb(223, 60, 196);
+    border-radius: 45px;
+    background-color: white;
+}
+
+.nevbar button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 45px;
+    color: white;
+    background-color: rgb(255, 0, 191);
+    border: none;
+    border: 2px solid #CBE4DE;
+    transition: 0.5s;
+}
+
+.nevbar button:hover {
+    box-shadow: 0px 0px 5px 5px rgb(250, 5, 197);
+}
+/*-------------------------------state details-------------------------*/
+
+.container{
+    width: 95vw;
+    min-height: 1300px;
+    background-color: #FFF;
+    margin: auto auto;
+    border-radius: 45px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .5);
+    padding: 20px;
+}
+.PD{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px;
+}
+.PDImg{
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.PDtext{
+    width: 560px;
+}
+.PDtext p{
+    text-indent: 30px;
+}
+.PDButton{
+    position: relative;
+    left: 130px;
+    display: flex;
+    margin: 30px;
+}
+.BTN{
+    padding: 10px 15px;
+    background-color: #FFF;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 10px;
+    border: 3px solid rgb(89, 167, 187);
+    border-radius: 10px;
+    color: rgb(89, 167, 187);
+}
+.BTN:hover{
+    border: 3px solid rgb(219, 85, 197);
+    color: rgb(219, 85, 197);
+}
+#Buy{
+    padding: 10px 30px;
+}
+.image{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: scroll;
+}
+.image img{
+    width: 250px;
+    height: 200px;
+}
+.PFD{
+    width: 100vw;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+}
+.PFDpara{
+    width: 650px;
+    margin: 20px;
+    padding: 20px;
+}
+.PDivition{
+    width: 650px;
+    margin: 20px;
+    padding: 20px;
+}
+:is(.PFDpara, .PDivition) h1{
+    margin: 10px 0 30px;
+}
+.PDivition ol{
+    margin-left: 50px;
+}
+/*-------------------------------menu-------------------------*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 450px;
+    overflow: scroll;
+
+}
+.contend {
+    margin: 10px;
+    width: 400px;
+    height: 420px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    transform: .2s ease-in-out;
+}
+
+.contend img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.details h4 {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+
+.details p {
+    text-align: center;
+}
+
+.details button {
+    color: white;
+    background-color: rgb(255, 0, 191);
+    border: 2px solid white;
+    position: absolute;
+    left: 135px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+.details button:hover {
+    box-shadow: 0 0 15px 5px rgb(167, 1, 125);
+}
+/*-------------------------------Footer-------------------------*/
+footer {
+    position: relative;
+    display: inline-block;
+    bottom: 0px;
+    background-color: rgb(61, 61, 61);
+    height: 320px;
+    width: 100vw;
+    color: #CBE4DE;
+    overflow: hidden;
+
+}
+
+.company {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+
+.service {
+    position: absolute;
+    left: 350px;
+    top: 0px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+
+.usefulllinks {
+    position: absolute;
+    top: 0;
+    left: 710px;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+
+.contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    height: 295px;
+    width: 295px;
+}
+
+.company p {
+    text-align: center;
+}
+
+.company h3,
+.service h3,
+.usefulllinks h3,
+.contact h3 {
+    margin: 10px 0;
+    padding: 0 0 10px 0;
+    text-align: center;
+    width: 135px;
+    position: relative;
+    left: 80px;
+    border-bottom: 2px solid rgb(223, 60, 196);
+
+}
+
+.company ul,
+.service ul,
+.usefulllinks ul,
+.contact ul {
+    list-style-type: none;
+}
+
+.company ul li,
+.service ul li,
+.usefulllinks ul li,
+.contact ul li {
+    padding: 8px 0;
+}
+
+.company ul li a,
+.service ul li a,
+.usefulllinks ul li a,
+.contact ul li a {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}
+
+.company ul li a:hover,
+.service ul li a:hover,
+.usefulllinks ul li a:hover,
+.contact ul li a:hover {
+    font-size: 1.2rem;
+    color: rgb(223, 60, 196);
+}
+
